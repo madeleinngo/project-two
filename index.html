@@ -9,19 +9,22 @@
     <title>Gordon Ramsay Master Class</title>
   </head>
   <body>
-    Gordon Ramsay Master Class
-    <nav>
-      <img src="" alt="spoon and fork website logo" />
-      <img src="" alt="navigation menu" />
+    <nav class="primary-nav">
+      <div class="logo">
+        <img src="./images/logo.png" alt="spoon and fork website logo" />
+      </div>
+      <button class="toggle"><img src="" alt="navigation menu" /></button>
       <ul>
         <li><a href="./index.html">Home</a></li>
+        <li><a href="./about/index.html"></a>About</li>
+        <li><a href="./FAQ/index.html"></a>FAQ</li>
         <li><a href="./appetizer/index.html">Appetizer</a></li>
         <li><a href="./main-course/index.html">Main Course</a></li>
         <li><a href="./dessert/index.html">Dessert</a></li>
         <li><a href="./credits.html">Credits</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="container">
       <div class="slidesshow-container">
         <div class="mySlides fade">
           <div class="text">
@@ -63,14 +66,22 @@
             style="width: 100%"
           />
         </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="animated-link" href="#">
+          <div class="container">
+            <span class="label">More</span>
+            <i class="arrow fas fa-long-arrow-alt-right fa-2"></i>
+            <div class="accent"></div>
+          </div>
+        </a>
       </div>
-      <br />
-      <div style="text-align: center" class="stories-bar">
-        <span onclick="currentSlide(1)"></span>
-        <span onclick="currentSlide(2)"></span>
-        <span onclick="currentSlide(3)"></span>
-        <span onclick="currentslide(4)"></span>
-      </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+      
     </div>
   </body>
 </html>
