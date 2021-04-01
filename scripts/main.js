@@ -8,31 +8,32 @@ function toggle() {
 toggleButton.addEventListener("click", toggle);
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 0;
+var slides = document.querySelectorAll(".slideshow > div");
+var maxIndex = slides.length - 1;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+function back() {
+  if (slideIndex === 0) {
+    slideIndex = maxIndex;
+    toggle(0, maxIndex);
+  } else {
+    --slideIndex;
+    toggle(slideIndex + 1, slideIndex);
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
+
+function next() {
+  if (slideIndex === maxIndex) {
+    slideIndex = 0;
+    toggle(maxIndex, 0);
+  } else {
+    ++slideIndex;
+    toggle(slideIndex - 1, slideIndex);
+  }
+}
+
+function toggle(from, to) {
+  slides[from].classList.remove("active");
+  slides[to].classList.add("active");
+}
+

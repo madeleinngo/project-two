@@ -24,64 +24,46 @@
         <li><a href="./credits.html">Credits</a></li>
       </ul>
     </nav>
-    <div class="container">
-      <div class="slidesshow-container">
-        <div class="mySlides fade">
-          <div class="text">
-            <h1>Gordon Ramsay, I want to be like you.</h1>
-          </div>
-          <img
-            src="./images/gordon-ramsay.jpeg"
-            alt="Gordon Ramsay in a clean kitchen."
-            style="width: 100%"
-          />
-        </div>
-        <div class="mySlides fade>
-          <div class="text">
-            <h1>Appetizer</h1>
-          </div>
-          <img
-            src="./images/appetizer.jpg"
-            alt="Hoisin Glazed Chicken Salad."
-            style="width: 100%"
-          />
-        </div>
-        <div class="mySlides fade">
-          <div class="text">
-            <h1>Main Course</h1>
-          </div>
-          <img
-            src="./images/main-course.jpeg"
-            alt="Fried Brenzino with Thai Chilli Lettuce Cups."
-            style="width: 100%"
-          />
-        </div>
-        <div class="mySlides fade">
-          <div class="text">
-            <h1>Dessert</h1>
-          </div>
-          <img
-            src="./images/dessert.jpg"
-            alt="Raspberry Souffle."
-            style="width: 100%"
-          />
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <a class="animated-link" href="#">
-          <div class="container">
-            <span class="label">More</span>
-            <i class="arrow fas fa-long-arrow-alt-right fa-2"></i>
-            <div class="accent"></div>
-          </div>
-        </a>
+    <div class="slideshow">
+      <div class="active">
+        <h1>Gordon Ramsay, I want to be like you.</h1>
+        <img
+          src="./images/gordon-ramsay.jpeg"
+          alt="Gordon Ramsay in a clean kitchen."
+          style="width: 100%"
+        />
       </div>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <div>
+        <h1>Appetizer</h1>
+        <img
+          src="./images/appetizer.jpg"
+          alt="Hoisin Glazed Chicken Salad."
+          style="width: 100%"
+        />
+      </div>
+      <div>
+        <h1>Main Course</h1>
+        <img
+          src="./images/main-course.jpeg"
+          alt="Fried Brenzino with Thai Chilli Lettuce Cups."
+          style="width: 100%"
+        />
+      </div>
+      <div>
+        <h1>Dessert</h1>
+        <img
+          src="./images/dessert.jpg"
+          alt="Raspberry Souffle."
+          style="width: 100%"
+        />
+      </div>
+      <button class="back" onclick="back()">Back</button>
+      <button class="next" onclick="next()">Next</button>
     </div>
-      
+    <div class="container">
+      <span class="label">More</span>
+      <i class="arrow fas fa-long-arrow-alt-right fa-2"></i>
+      <div class="accent"></div>
     </div>
   </body>
 </html>
