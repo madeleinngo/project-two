@@ -1,15 +1,15 @@
 var toggleButton = document.querySelector(".toggle");
 var links = document.querySelector(".links");
 
-function toggle() {
+function toggleMenu() {
   links.classList.toggle("active");
 }
 
-toggleButton.addEventListener("click", toggle);
-
+toggleButton.addEventListener("click", toggleMenu);
 
 var slideIndex = 0;
-var slides = document.querySelectorAll(".slideshow > div");
+var slides = document.querySelectorAll(".slideshow > div.slide");
+var stories = document.querySelectorAll(".progress-container > div");
 var maxIndex = slides.length - 1;
 
 function back() {
@@ -35,5 +35,8 @@ function next() {
 function toggle(from, to) {
   slides[from].classList.remove("active");
   slides[to].classList.add("active");
+
+  stories[from].classList.remove("active");
+  stories[to].classList.add("active");
 }
 
