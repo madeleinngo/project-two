@@ -211,6 +211,10 @@ div > h1 {
 
 /* Mobile Rules */
 @media (max-width: 767px) {
+  .toggle > img {
+    max-width: 48px;
+    max-beight: 48px;
+  }
   h1 {
     font-size: 80px;
     line-height: 80px;
