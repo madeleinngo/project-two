@@ -22,6 +22,10 @@ p {
   color: #707070;
 }
 
+.logo {
+  color: #707070;
+}
+
 /* Mobile Rules */
 @media (max-width: 767px) {
   h2 {
