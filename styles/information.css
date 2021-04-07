@@ -24,6 +24,7 @@ p {
 
 .primary-nav {
   position: relative;
+  z-index: 100;
 }
 
 .primary-nav ul a {
@@ -34,11 +35,15 @@ p {
   color: #707070;
 }
 
+.toggle > i {
+  color: #707070;
+}
+
 .iframe-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
-  height: 0
+  height: 0;
   max-width: 100%;
 }
 .iframe-container iframe {
@@ -55,7 +60,7 @@ p {
     font-size: 40px;
   }
   .body-text {
-    padding: 24px;
+    padding: 48px;
   }
 }
 
@@ -68,6 +73,6 @@ p {
   .body-text {
     padding: 180px;
     font-size: 32px;
-    padding-top:72px;
+    padding-top: 72px;
   }
 }
