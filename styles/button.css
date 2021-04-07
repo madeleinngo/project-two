@@ -1,70 +1,86 @@
-  /*
+/*
     If you are coming back to this, I made some changes here
     so that the style is more easily configurable. Most things
     you might want to change can be done by editing a CSS variable.
   
     Also fixed an issue with overflow hidden in Safari.
   */
-  :root {
-    --animated-link-font-size: 16px;
-    --animated-link-width: 12em;
-    --animated-link-height: 4em; /* Probably should leave this as is */
-    --animated-link-opacity: 0.5;
-    --animated-link-font-color: white;
-    --animated-link-background-color: rgba(0, 0, 0, 0.5);
-    --animated-link-accent-color: #FF7700;
-  }
-  
-  .animated-link {
-    font-size: var(--animated-link-font-size);
-    color: var(--animated-link-font-color);
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-block;
-    font-family: sans-serif;
-  }
-  
-  .animated-link .container {
-    width: var(--animated-link-width);
-    height: var(--animated-link-height);
-    border-radius: var(--animated-link-height);
-    background: var(--animated-link-background-color);
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
-  
-  .label,
-  .arrow {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .arrow {
-    font-size: 1.5em;
-    margin-left: 0.5em;
-    transition: transform 800ms cubic-bezier(.86,0,.07,1);
-    transform: translate3d(0, 0, 0);
-  }
-  
-  .animated-link:hover .arrow {
-    transform: translate3d(calc(var(--animated-link-width) / 3 - 3em), 0, 0);
-  }
-  
-  .animated-link .accent {
-    position: absolute;
-    background: var(--animated-link-accent-color);
-    height: 100%;
-    width: 100%;
-    border-radius: var(--animated-link-height);
-    transition: transform 800ms cubic-bezier(.86, 0, .07, 1);
-    transform: translate3d(0, 0, 0);
-  }
-  
-  .animated-link:hover .accent {
-    transform: translate3d(calc(var(--animated-link-width) - var(--animated-link-height)), 0, 0);
-  }
+:root {
+  --animated-link-font-size: 16px;
+  --animated-link-width: 12em;
+  --animated-link-height: 4em; /* Probably should leave this as is */
+  --animated-link-opacity: 0.5;
+  --animated-link-font-color: white;
+  --animated-link-background-color: rgba(0, 0, 0, 0.5);
+  --animated-link-accent-color: #ff7700;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.animated-link {
+  font-size: var(--animated-link-font-size);
+  color: var(--animated-link-font-color);
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.animated-link .container {
+  width: var(--animated-link-width);
+  height: var(--animated-link-height);
+  border-radius: var(--animated-link-height);
+  background: var(--animated-link-background-color);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.label,
+.arrow {
+  position: relative;
+  z-index: 2;
+}
+
+.arrow {
+  font-size: 1.5em;
+  margin-left: 0.5em;
+  transition: transform 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  transform: translate3d(0, 0, 0);
+}
+
+.animated-link:hover .arrow {
+  transform: translate3d(calc(var(--animated-link-width) / 3 - 3em), 0, 0);
+}
+
+.animated-link .accent {
+  position: absolute;
+  background: var(--animated-link-accent-color);
+  height: 100%;
+  width: 100%;
+  border-radius: var(--animated-link-height);
+  transition: transform 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  transform: translate3d(0, 0, 0);
+}
+
+.animated-link:hover .accent {
+  transform: translate3d(
+    calc(var(--animated-link-width) - var(--animated-link-height)),
+    0,
+    0
+  );
+}

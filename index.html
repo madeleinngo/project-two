@@ -17,10 +17,10 @@
   <body>
     <nav class="primary-nav">
       <div class="logo">
-        <img src="./images/logo.png" alt="spoon and fork website logo" />
+        <i class="fas fa-utensils"></i>
       </div>
       <button class="toggle">
-        <img src="./images/hamburger-menu.png" alt="navigation menu" />
+        <i class="fas fa-bars"></i>
       </button>
       <ul>
         <li><a href="./index.html">Home</a></li>
@@ -39,7 +39,7 @@
             <h1>Gordon Ramsay, I want to be like you.</h1>
             <div class="flex justify-center items-center">
               <a class="animated-link" href="./about/index.html">
-                <div class="container gordon-color">
+                <div class="container">
                   <span class="label">Discover</span>
                   <i class="arrow fas fa-long-arrow-alt-right fa-2"></i>
                   <div class="accent"></div>
@@ -121,8 +121,12 @@
         />
       </div>
 
-      <button class="back" onclick="back()">Back</button>
-      <button class="next" onclick="next()">Next</button>
+      <button class="back" onclick="back()">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="next" onclick="next()">
+        <i class="fas fa-chevron-right"></i>
+      </button>
 
       <div class="progress-container">
         <div class="active"></div>

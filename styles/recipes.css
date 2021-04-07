@@ -18,6 +18,15 @@ img {
   display: block;
 }
 
+.logo {
+  display: inline-flex;
+  max-height: 48px;
+  max-width: 48px;
+  margin-left: 0px;
+  padding: 48px;
+  color: #707070;
+}
+
 .primary-nav {
   display: flex;
   position: relative;
@@ -54,18 +63,6 @@ img {
   color: #707070;
 }
 
-.flex {
-  display: flex;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.items-center {
-  align-items: center;
-}
-
 .footer {
   color: #707070;
   justify-content: center;
@@ -91,22 +88,15 @@ figure > img {
 
 /* Mobile Rules*/
 @media (max-width: 767px) {
-  .body-paragraph {
-    margin: 0px auto;
-    padding-top: 24px;
-  }
-
-  .has-sidebar {
-    color: #707070;
-    margin: 0 auto;
-    padding-left: 48px;
-    padding-right: 48px;
-    padding-bottom: 0px;
-    padding-top: 48px;
-  }
-
-  .heading {
+  .toggle {
     padding: 48px;
+    margin: 0;
+    right: 0;
+    margin-right: 24px;
+    border: 0;
+    background: none;
+    color: #707070;
+    position: fixed;
   }
 
   .primary-nav ul {
@@ -129,6 +119,24 @@ figure > img {
 
   .primary-nav ul a {
     color: white;
+  }
+
+  .heading {
+    padding: 48px;
+  }
+
+  .body-paragraph {
+    margin: 0px auto;
+    padding-top: 24px;
+  }
+
+  .has-sidebar {
+    color: #707070;
+    margin: 0 auto;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 0px;
+    padding-top: 48px;
   }
 }
 
