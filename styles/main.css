@@ -224,6 +224,7 @@ div > h1 {
     font-size: 80px;
     line-height: 80px;
   }
+
   .primary-nav ul {
     opacity: 0;
     transition: all 300ms;
@@ -245,6 +246,31 @@ div > h1 {
 
   .primary-nav ul a {
     color: white;
+  }
+
+  .toggled-navbar {
+    background-color: #0c1d2c;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .toggled-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 24px;
+  }
+
+  .toggled-navbar a {
+    color: white;
+    font-family: hero-new, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 2.5;
+    text-decoration: none;
   }
 }
 

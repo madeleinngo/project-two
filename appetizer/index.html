@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/recipes.css" />
     <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ekb2mgj.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -18,9 +19,9 @@
       <div class="logo">
         <i class="fas fa-utensils"></i>
       </div>
-      <button class="toggle">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="toggle">
+        <a href="../navbar/index.html"><i class="fas fa-bars"></i></a>
+      </div>
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about/index.html">About</a></li>
@@ -37,6 +38,7 @@
         <div>
           <h4>Appetizer</h4>
           <h2>Hoisin Glazed Chicken Salad</h2>
+          <h4>Serves 4-6</h4>
           <p>
             This is a versatile dish that can be plated as an appetizer or
             entree. It’s a time-saver if you’re having a dinner party because
@@ -45,35 +47,36 @@
             can help themselves or plate individually if you’re serving it as
             the entree.
           </p>
+          <div class="button-desktop">
+            <a class="animated-link" href="#">
+              <div class="container">
+                <span class="label">Download</span>
+                <i class="arrow fas fa-long-arrow-alt-right fa-2"></i>
+                <div class="accent"></div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="heading-image">
-        <img
-          src="../images/appetizer.jpg"
-          alt="Hoisin Glazed Chicken Salad"
-          width="100%"
-        />
-      </div>
-    </div>
-
-    <div class="flex justify-center items-center button">
-      <a class="animated-link" href="#">
-        <div class="container">
-          <span class="label">Download</span>
-          <i class="arrow fas fa-long-arrow-alt-right fa-2"></i>
-          <div class="accent"></div>
+        <div class="heading-image">
+          <img
+            src="../images/appetizer.jpg"
+            alt="Hoisin Glazed Chicken Salad"
+            width="100%"
+          />
         </div>
-      </a>
-    </div>
 
-    <!-- <div>
-      <div class="media-element">
-        <img
-          src="../images/appetizer-ingredients.tiff"
-          alt="Ingredients for Hoisin Glazed Chicken Salad"
-        />
+
+      <div class="button-mobile">
+        <a class="animated-link" href="#">
+          <div class="container">
+            <span class="label">Download</span>
+            <i class="arrow fas fa-long-arrow-alt-right fa-2"></i>
+            <div class="accent"></div>
+          </div>
+        </a>
       </div>
-    </div> -->
+    </div>
 
     <div class="has-sidebar">
       <aside>
@@ -227,6 +230,5 @@
           </caption>
         </figure>
       </div>
-    </div>
   </body>
 </html>

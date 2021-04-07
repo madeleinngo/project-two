@@ -92,11 +92,11 @@ figure > img {
     padding: 48px;
     margin: 0;
     right: 0;
-    margin-right: 24px;
     border: 0;
     background: none;
     color: #707070;
-    position: fixed;
+    position: absolute;
+    margin-top: 20px;
   }
 
   .primary-nav ul {
@@ -123,6 +123,7 @@ figure > img {
 
   .heading {
     padding: 48px;
+    padding-bottom: 0px;
   }
 
   .body-paragraph {
@@ -137,6 +138,20 @@ figure > img {
     padding-right: 48px;
     padding-bottom: 0px;
     padding-top: 48px;
+  }
+
+  .button-mobile {
+    margin-top: 48px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .button-desktop {
+    display: none;
+  }
+
+  .suggestions-cards {
+    padding: 24px;
   }
 }
 
@@ -160,12 +175,21 @@ figure > img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    padding-bottom: 48px;
   }
 
   .heading-text {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .button-desktop {
+    padding-top: 24px;
+  }
+
+  .button-mobile {
+    display: none;
   }
 
   .toggle {
@@ -181,13 +205,9 @@ figure > img {
     padding-left: 10px;
   }
 
-  .button {
-    padding: 48px;
-  }
-
   figure {
     max-width: 600px;
-    max-height: 400px;
+    max-height: 450px;
   }
 
   figure > img {

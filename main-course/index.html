@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/recipes.css" />
     <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ekb2mgj.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -18,9 +19,9 @@
       <div class="logo">
         <i class="fas fa-utensils"></i>
       </div>
-      <button class="toggle">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="toggle">
+        <a href="../navbar/"><i class="fas fa-bars"></i></a>
+      </div>
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about/index.html">About</a></li>
@@ -37,6 +38,7 @@
         <div>
           <h4>Main Course</h4>
           <h2>Fried Branzino with Thai Chili Lettuce Cups</h2>
+          <h4>Serves 4-6</h4>
           <p>
             When Gordon spent six months in southeast Asia, he spent time living
             with a family on the Mekong River Delta in southern Vietnam. This
@@ -46,25 +48,34 @@
             build their own lettuce cups. Since this will be presented in the
             middle of the table, it’s important to trim the sharp, spiky fins.
           </p>
+          <div class="button-desktop">
+            <a class="animated-link" href="#">
+              <div class="container">
+                <span class="label">Download</span>
+                <i class="arrow fas fa-long-arrow-alt-right fa-2"></i>
+                <div class="accent"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="heading-image">
+          <img
+            src="../images/main-course.jpeg"
+            alt="Fried Branzino with Thai Chili Lettuce Cups"
+            width="100%"
+          />
         </div>
       </div>
-      <div class="heading-image">
-        <img
-          src="../images/main-course.jpeg"
-          alt="Fried Branzino with Thai Chili Lettuce Cups"
-          width="100%"
-        />
-      </div>
-    </div>
 
-    <div class="flex justify-center items-center button">
-      <a class="animated-link" href="#">
-        <div class="container">
-          <span class="label">Download</span>
-          <i class="arrow fas fa-long-arrow-alt-right fa-2"></i>
-          <div class="accent"></div>
-        </div>
-      </a>
+      <div class="button-mobile">
+        <a class="animated-link" href="#">
+          <div class="container">
+            <span class="label">Download</span>
+            <i class="arrow fas fa-long-arrow-alt-right fa-2"></i>
+            <div class="accent"></div>
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class="has-sidebar">
@@ -74,7 +85,7 @@
           <li>2 pound whole branzino, gutted and scaled</li>
           <li>2 garlic cloves, crushed</li>
           <li>½-inch knob ginger, sliced</li>
-          <li>1 shallot, sliced/li></li>
+          <li>1 shallot, sliced</li>
           <li>½ stalk lemongrass, rough cut</li>
           <li>4 Thai chilis, halved</li>
           <li>1 cup Shaoxing wine</li>
