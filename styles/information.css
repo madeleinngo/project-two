@@ -79,6 +79,11 @@ p {
   h2 {
     font-size: 40px;
   }
+
+  h3 {
+    font-size: 32px;
+  }
+
   .body-text {
     padding: 48px;
   }
@@ -122,9 +127,13 @@ p {
     font-size: 80px;
   }
 
+  h3 {
+    font-size: 48px;
+  }
+
   .body-text {
     padding: 180px;
-    font-size: 32px;
+    font-size: 30px;
     padding-top: 72px;
   }
 
