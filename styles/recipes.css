@@ -218,17 +218,9 @@ figure > img {
     padding-left: 10px;
   }
 
-  figure {
-    max-width: 600px;
-    max-height: 450px;
-  }
-
-  figure > img {
-    max-height: 400px;
-    max-width: 600px;
-  }
-
   .footer {
     padding: 48px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
