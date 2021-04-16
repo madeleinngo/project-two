@@ -170,7 +170,7 @@ figure > img {
   .has-sidebar {
     display: grid;
     grid-template-columns: 300px 1fr;
-    gap: 1rem;
+    gap: 4rem;
     max-width: 900px;
     margin: 0 auto;
     color: #707070;
