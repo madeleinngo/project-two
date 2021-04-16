@@ -182,6 +182,14 @@ figure > img {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #f3f3f3;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .heading-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .button-desktop {
