@@ -26,8 +26,6 @@ p {
   display: inline-flex;
   max-height: 48px;
   max-width: 48px;
-  margin-left: 0px;
-  padding: 48px;
   color: #707070;
 }
 
@@ -36,10 +34,12 @@ p {
   position: relative;
   align-items: center;
   justify-content: space-between;
-  height: 48px;
+  min-height: 48px;
   overflow: hidden;
   z-index: 3;
   width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .primary-nav a {
@@ -88,18 +88,16 @@ p {
     padding: 48px;
   }
   .toggle {
-    padding: 48px;
     margin: 0;
     right: 0;
     border: 0;
     background: none;
     color: #707070;
-    position: absolute;
-    margin-top: 20px;
   }
 
   .primary-nav ul {
     opacity: 0;
+    display: none;
     transition: all 300ms;
     top: 64px;
     width: 100%;
@@ -108,6 +106,7 @@ p {
   }
 
   .primary-nav ul.active {
+    display: block;
     opacity: 1;
     transform: translateX(0);
   }

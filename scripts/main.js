@@ -39,4 +39,3 @@ function toggle(from, to) {
   stories[from].classList.remove("active");
   stories[to].classList.add("active");
 }
-

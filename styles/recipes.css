@@ -7,6 +7,11 @@ body {
     Helvetica Neue, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 2em;
 }
 
 figure {
@@ -22,8 +27,6 @@ img {
   display: inline-flex;
   max-height: 48px;
   max-width: 48px;
-  margin-left: 0px;
-  padding: 48px;
   color: #707070;
 }
 
@@ -32,10 +35,12 @@ img {
   position: relative;
   align-items: center;
   justify-content: space-between;
-  height: 48px;
+  min-height: 48px;
   overflow: hidden;
   z-index: 10;
   width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .primary-nav a {
@@ -89,18 +94,15 @@ figure > img {
 /* Mobile Rules*/
 @media (max-width: 767px) {
   .toggle {
-    padding: 48px;
     margin: 0;
-    right: 0;
     border: 0;
     background: none;
     color: #707070;
-    position: absolute;
-    margin-top: 20px;
   }
 
   .primary-nav ul {
     opacity: 0;
+    display: none;
     transition: all 300ms;
     top: 64px;
     width: 100%;
@@ -109,6 +111,7 @@ figure > img {
   }
 
   .primary-nav ul.active {
+    display: block;
     opacity: 1;
     transform: translateX(0);
   }
@@ -165,7 +168,7 @@ figure > img {
   .has-sidebar {
     display: grid;
     grid-template-columns: 300px 1fr;
-    gap: 1rem;
+    gap: 4rem;
     max-width: 900px;
     margin: 0 auto;
     color: #707070;
@@ -182,6 +185,14 @@ figure > img {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #f3f3f3;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .heading-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .button-desktop {
@@ -205,17 +216,9 @@ figure > img {
     padding-left: 10px;
   }
 
-  figure {
-    max-width: 600px;
-    max-height: 450px;
-  }
-
-  figure > img {
-    max-height: 400px;
-    max-width: 600px;
-  }
-
   .footer {
     padding: 48px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
